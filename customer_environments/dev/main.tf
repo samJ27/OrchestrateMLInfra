@@ -20,7 +20,7 @@ locals {
     customer_name = var.customer_name
 }
 
-module {
+module "customer_resources" {
   source = "../../modules/customer_resources"
 
   customer_name = local.customer_name
